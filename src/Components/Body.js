@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Styles/Login.css'
 import '../Styles/Body.css'
@@ -24,12 +24,17 @@ import cal from '../Images/cal.png'
 import { useDispatch, useSelector } from 'react-redux';
 import { ischeck } from '../Redux/Slices/PopupSlice';
 import { Dropdown } from "react-bootstrap";
+import { isgroup } from '../Redux/Slices/GroupSlice';
 
 export default function Body() {
 
     const count = useSelector((state) => state.check.value);
     const group = useSelector((state) => state.group.value)
     const dispatch = useDispatch();
+
+    useEffect(()=>{
+        dispatch(isgroup(true))
+    },[])
 
     const groups = [
         { name: "Leisure", image: s1, follow: true },
