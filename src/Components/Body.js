@@ -157,9 +157,9 @@ export default function Body() {
                                         <span className="text-muted fw-bold">Sarah West</span>
                                         <span className="text-muted" style={{ marginRight: '20px' }}>👁 1.4k views</span>
                                     </div>
-                                    <div>
+                                    
                                     <button className='share1'> <AiOutlineShareAlt size={15} /></button>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -218,9 +218,9 @@ export default function Body() {
                                     <span className="text-muted fw-bold">Ronal Jones</span>
                                     <span className="text-muted" style={{ marginRight: '20px' }}>👁 800 views</span>
                                 </div>
-                                <div>
+                            
                                 <button className='share1'> <AiOutlineShareAlt size={15} /></button>
-                                </div>
+                                
                             </div>
                         </div>
 
@@ -272,9 +272,9 @@ export default function Body() {
                                     <span className="text-muted fw-bold">Joseph Gray</span>
                                     <span className="text-muted" style={{ marginRight: '20px' }}>👁 4.8k views</span>
                                 </div>
-                                <div>
+                            
                                 <button className='share1'> <AiOutlineShareAlt size={15} /></button>
-                                </div>
+                                
                             </div>
                         </div>
 
