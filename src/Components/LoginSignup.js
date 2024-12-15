@@ -6,6 +6,7 @@ import fb from '../Images/fb.png'
 import { useDispatch, useSelector } from "react-redux";
 import { ischeck } from "../Redux/Slices/PopupSlice";
 import { islogin } from "../Redux/Slices/LoginSlice";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const LoginSignUp = () => {
   const [showPopup, setShowPopup] = useState("");
@@ -26,6 +27,12 @@ useEffect(()=>{
     openPopup("signup")
 },[count])  
 
+const [showPassword, setShowPassword] = useState(false);
+
+    const togglePasswordVisibility = () => {
+        setShowPassword((prev) => !prev);
+    };
+
   return (
     <div className="container" style={{zIndex:"20000"}}>
 
@@ -44,7 +51,33 @@ useEffect(()=>{
                         <input type="text" className="form-control w-50" placeholder="Last Name" />
                     </div>
                     <input type="email" className="form-control p-2" placeholder="Email" />
-                    <input type="password" className="form-control p-2" placeholder="Password" />
+                    <div className="position-relative">
+                <input
+                    type={showPassword ? "text" : "password"}
+                    className="form-control mb-4 p-2"
+                    placeholder="Password"
+                    required
+                />
+                {/* Show/Hide Password Button */}
+                <span
+                    onClick={togglePasswordVisibility}
+                    className="position-absolute"
+                    style={{
+                        right: "10px",
+                        top: "50%",
+                        transform: "translateY(-50%)",
+                        cursor: "pointer",
+                        fontSize: "12px",
+                        color: "#0d6efd",
+                    }}
+                >
+                    {showPassword ? (
+                        <FaEyeSlash size={18} color="#0d6efd" />
+                    ) : (
+                        <FaEye size={18} color="#0d6efd" />
+                    )}
+                </span>
+            </div>
                     <input type="password" className="form-control mb-4 p-2" placeholder="Confirm Password" />
                     <div className="resp d-flex justify-content-between align-items-center">
                         <button type="submit" className="subbtn btn btn-primary rounded-5 mb-4">Create Account</button>
@@ -78,7 +111,33 @@ useEffect(()=>{
                 <h3 className="text-black fw-bold mb-4">Welcome back!</h3>
                 <form style={{fontSize:'14px'}} onSubmit={(e)=>{e.preventDefault();closePopup();dispatch(islogin(true))}}>
                     <input type="email" className="form-control p-2" placeholder="Email" />
-                    <input type="password" className="form-control mb-4 p-2" placeholder="Password" />
+                    <div className="position-relative">
+                <input
+                    type={showPassword ? "text" : "password"}
+                    className="form-control mb-4 p-2"
+                    placeholder="Password"
+                    required
+                />
+                {/* Show/Hide Password Button */}
+                <span
+                    onClick={togglePasswordVisibility}
+                    className="position-absolute"
+                    style={{
+                        right: "10px",
+                        top: "50%",
+                        transform: "translateY(-50%)",
+                        cursor: "pointer",
+                        fontSize: "12px",
+                        color: "#0d6efd",
+                    }}
+                >
+                    {showPassword ? (
+                        <FaEyeSlash size={18} color="#0d6efd" />
+                    ) : (
+                        <FaEye size={18} color="#0d6efd" />
+                    )}
+                </span>
+            </div>
                     <div className="resp d-flex justify-content-between align-items-center">
                         <button type="submit" className="subbtn btn btn-primary rounded-5 mb-4">Sign In</button>
                         <p className="mobmsg link" onClick={() => openPopup("signup")}>Or, Create Account</p>
