@@ -265,7 +265,7 @@ export default function Body() {
                         </div>
                         <div className="justify-content-between align-items-center">
                             <div className='d-flex'>
-                                <img height={48} width={48} className='rounded-5' style={{ marginRight: '10px' }} src={p4} />
+                                <img height={45} width={48} className='rounded-5' style={{ marginRight: '10px',borderRadius:'50%' }} src={p4} />
                                 <div className='likes'>
                                     <span className="text-muted fw-bold">Joseph Gray</span>
                                     <span className="text-muted" style={{ marginRight: '20px' }}>👁 4.8k views</span>
