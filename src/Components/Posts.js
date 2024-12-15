@@ -36,7 +36,7 @@ export default function Posts() {
             }
         </div>
         <div className='small-tags justify-content-between align-items-center'>
-            <p>Posts(368)</p>
+            <p className='fw-bold' style={{marginTop:'5px'}}>Posts(368)</p>
             <select className='filter'>
                 <option>Filter: All</option>
                 <option>Write Post</option>
