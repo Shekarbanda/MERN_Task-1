@@ -30,7 +30,14 @@
     right: 30px;
     display: none;
 }
-
+.share1{
+    width: 42px;
+    height: 36px;
+    background-color: #EDEEF0;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
 .visit{
     border: 0.7px solid #A9AEB8;
     width: 100%;
@@ -45,6 +52,9 @@
     justify-content: space-between;
     align-items: center;
   
+}
+.share1:hover{
+    background-color:#A9AEB8 ;
 }
 
 .profile-pic{
@@ -84,6 +94,17 @@
         justify-content: flex-start;
         align-items: start;
     }
+    .share1{
+        
+        width: 100px;
+        height: 36px;
+        font-size: 9px;
+    }
+    .share1::after{
+        content: 'Share';
+        margin-left: 5px;
+    }
+    
 }
 
 .dropdown{
@@ -99,3 +120,5 @@
     outline: none;
  
   }
+
+  

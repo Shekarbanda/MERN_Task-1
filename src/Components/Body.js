@@ -25,6 +25,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { ischeck } from '../Redux/Slices/PopupSlice';
 import { Dropdown } from "react-bootstrap";
 import { isgroup } from '../Redux/Slices/GroupSlice';
+import { FaShare } from 'react-icons/fa'; 
+import { AiOutlineShareAlt } from 'react-icons/ai';
 
 export default function Body() {
 
@@ -99,7 +101,7 @@ export default function Body() {
                                         <span className="text-muted" style={{ marginRight: '20px' }}>👁 1.4k views</span>
                                     </div>
 
-                                    <img className='profile-pic cursor-pointer' width={22} height={22} src={share} />
+                                    <button className='share1'> <AiOutlineShareAlt size={15} /></button>
 
                                 </div>
                             </div>
@@ -156,7 +158,7 @@ export default function Body() {
                                         <span className="text-muted" style={{ marginRight: '20px' }}>👁 1.4k views</span>
                                     </div>
                                     <div>
-                                        <img className='profile-pic cursor-pointer' src={share} />
+                                    <button className='share1'> <AiOutlineShareAlt size={15} /></button>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +219,7 @@ export default function Body() {
                                     <span className="text-muted" style={{ marginRight: '20px' }}>👁 800 views</span>
                                 </div>
                                 <div>
-                                    <img className='profile-pic cursor-pointer' src={share} />
+                                <button className='share1'> <AiOutlineShareAlt size={15} /></button>
                                 </div>
                             </div>
                         </div>
@@ -271,7 +273,7 @@ export default function Body() {
                                     <span className="text-muted" style={{ marginRight: '20px' }}>👁 4.8k views</span>
                                 </div>
                                 <div>
-                                    <img className='profile-pic cursor-pointer' src={share} />
+                                <button className='share1'> <AiOutlineShareAlt size={15} /></button>
                                 </div>
                             </div>
                         </div>
