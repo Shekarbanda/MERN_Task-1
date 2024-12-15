@@ -33,7 +33,7 @@ useEffect(()=>{
 
       {showPopup === "signup" && (
         <div className="popup">
-          <button className="btn-close position-absolute top-0 end-0 m-2" onClick={closePopup}></button>
+          <button className="btn-close py-4 px-4 position-absolute top-0 end-0 m-2" onClick={closePopup}></button>
           <h4 className="reg text-center" style={{color:'#008A45',fontSize:'14px',backgroundColor:'#EFFFF4',height:'50px',padding:'30px',borderRadius: '10px'}}>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</h4>
           <div className="smlogin d-flex gap-3" style={{padding:"30px"}}>
             <div className="smallp">
@@ -63,7 +63,7 @@ useEffect(()=>{
                 Already have an account? <span className="link fw-medium" onClick={() => openPopup("login")}>Sign In</span>
                     </p>
                 <img className="logimg" width={320} height={320} src={loginimg}/>
-                <span style={{fontSize:'10px'}} className="mt-4">By signing up, you agree to our Terms & conditions, Privacy policy</span>
+                
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ useEffect(()=>{
 
       {showPopup === "login" && (
         <div className="popup" >
-          <button className="btn-close position-absolute top-0 end-0 m-2" onClick={closePopup}></button>
+          <button className="btn-close position-absolute py-4 px-4 top-0 end-0 m-2" onClick={closePopup}></button>
           <h4 className="text-center reg" style={{color:'#008A45',fontSize:'14px',backgroundColor:'#EFFFF4',height:'50px',padding:'30px',borderRadius: '10px'}}>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</h4>
           <div className="smlogin d-flex gap-3" style={{padding:"30px"}}>
             <div  className='smallp'>

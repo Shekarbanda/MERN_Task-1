@@ -44,7 +44,7 @@ body {
       top: -100%;
     }
     to {
-      top: 50%;
+      bottom: 50%;
     }
   }
   
@@ -108,9 +108,8 @@ body {
     .popup {
       width: 100%;
       max-width: 1320px;
-    top:70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+      height: 85vh;
+      top:70vh;
     }
     .postcards{
         width: 100%;
@@ -120,7 +119,7 @@ body {
           top: 100%;
         }
         to {
-          top: 70%;
+          top: 70vh;
         }
       }
     .smlogin{
